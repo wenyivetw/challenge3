@@ -1,0 +1,159 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body {
+	background-color: black;
+	background-position: -30px 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	width: 100%;
+	position: relative;
+	padding: 40px;
+	margin-left:60px;
+	
+  	grid-template-columns: 1fr 1fr;
+ 	
+
+  grid-template-areas: 
+        "header header"
+	  	"nl  us"
+        "aw  gb"
+        "main1 main1"; 
+}
+.header{
+  grid-area: header;
+} 
+.nl {
+  grid-area: nl;
+  color: white;
+}
+.us {
+  grid-area: us;
+  color: white;
+}
+.aw {
+  grid-area: aw;
+  color: white;
+}
+.gb {
+  grid-area: gb;
+  color: white;
+}
+
+.main1{
+  grid-area:main1;
+}
+.margin-top{
+	margin-top: 110px;
+}
+#earth {
+	width:600px;
+	height:500px;
+	position:absolute;
+	margin-left: 18px;
+	margin-top: 80px;
+
+}
+#header {
+	height:75px;
+	
+}
+.country {
+	height: 100px;
+}
+#alert{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    text-align: center;
+}
+.main1 {
+	border-radius: 5px;
+	color: black;
+	background-color: white;
+	font-family: Century Gothic;
+	padding: 10px;
+	padding-left: 20px;
+	width: 100%;
+} 
+.main1 ul {
+	list-style-type: none;
+}
+.main1 ul li img{
+	float: left;
+	height: 35px;
+}
+.main1 ul li {
+	margin-top: 10px; 
+	overflow: auto;
+}
+.main1 ul li p{
+	float: left;
+	margin-left: 50px;
+}
+.button{
+	cursor: pointer;
+}
+span {
+	font-size:25px;
+	font-family:Century Gothic;
+}
+
+ /*Ipad versie*/
+@media only screen and (min-width: 601px){
+  #header {
+	/*width:750px;
+	height:100px;*/
+
+	}
+	p {
+		font-size: 24px;
+	}
+	#header {
+
+		height:90px;
+	
+	}
+	.country {
+		height: 120px;
+	}
+}
+
+  /*Laptop versie*/
+@media only screen and (min-width: 1025px){
+	body {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+ 	
+
+	  grid-template-areas: 
+	        "header header header header "
+		  	"nl  us aw  gb"
+	        "main1 main1 main1 main1"; 
+	}
+	.margin-top{
+			margin-top: 175px;
+	}
+	.main1.margin-top{
+			margin-top: 80px;
+	}
+	/*		width:500px;
+			height:75px;	
+			position: absolute;
+			margin-left:-20px;
+			margin-top:-20px;*/
+		}
+		#alertText{
+			background-color: white;
+			font-size: 24px;
+		}
+		.main1 {
+			font-size: 24px;
+
+		}
+}
