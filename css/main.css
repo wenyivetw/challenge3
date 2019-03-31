@@ -107,11 +107,7 @@ span {
 
  /*Ipad versie*/
 @media only screen and (min-width: 601px){
-  #header {
-	/*width:750px;
-	height:100px;*/
 
-	}
 	p {
 		font-size: 24px;
 	}
@@ -142,12 +138,7 @@ span {
 	.main1.margin-top{
 			margin-top: 80px;
 	}
-	/*		width:500px;
-			height:75px;	
-			position: absolute;
-			margin-left:-20px;
-			margin-top:-20px;*/
-		}
+
 		#alertText{
 			background-color: white;
 			font-size: 24px;
